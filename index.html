@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="Graphics.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Channaveera Shivaraj</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Channaveera Shivaraj</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./Resources/C_pic.JPG" alt="Channaveera Shivaraj profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Channaveera Shivaraj</h1>
+      <p class="section__text__p2">Software Engineer | Grad Student At Northeastern University</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./Resources/Channaveera_Res_Concise.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./Resources/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/channaveer-shivaraj-6a0768160/'" />
+        <img src="./Resources/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./Resources/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>4+ years <br />Software Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./Resources/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.E. Bachelor of Engineering in Mechanical Engineering<br />M.S. Master of Science in Computer Software Engineering</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Results-driven Full Stack Developer and automation engineer currently pursuing master’s degree in software engineering Systems at northeastern university with over 4 years of experience in software development in PLM (Product Lifecycle Management), automotive technology 
+            & digital transformation for 3DExperience and CATIA v5, Delmia with C++, CAA API's, SpringBoot, REST API's, Java . Committed to delivering high-quality, efficient solutions within tight deadlines.           </p>
+        </div>
+      </div>
+    </div>
+    <img src="./Resources/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="skills">
+    <p class="section__text__p1">What I Do</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-container">
+      <div class="skill">
+        <!-- <img src="./Resources/skill1.png" alt="Skill 1 icon" class="icon" /> -->
+        <h3>Programming Languages</h3>
+        <p>C++, Java, C#, VB.NET, Python</p>
+      </div>
+      <div class="skill">
+        <!-- <img src="./Resources/skill3.png" alt="Skill 3 icon" class="icon" /> -->
+        <h3>Tools & Technologies</h3>
+        <p>PLM, 3DExperience, CATIA v5, CAA API's, WebServices, REST API's, Docker, Jenkins, AWS</p>
+      </div>
+      <div class="skill">
+        <!-- <img src="./Resources/skill2.png" alt="Skill 2 icon" class="icon" /> -->
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, React</p>
+      </div>
+      <div class="skill">
+        <!-- <img src="./Resources/skill4.png" alt="Skill 4 icon" class="icon" /> -->
+        <h3>Database Management</h3>
+        <p>SQL, MongoDB, Postgres</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">L&T Technology Services</h2>
+          <div class="article-container">
+            <article>
+              <!-- <img src="./Resources/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div>
+                <h3>Software Engineer</h3>
+                <p>May 2022 - Aug 2023</p>
+                <ul>
+                  <li>Developed an automated Hydraulic Pressure Drop Calculator for CATIA v5 using C++ and CAA APIs, enhancing system performance by 20% and eliminating manual intervention.</li>
+                  <li>Spearheaded the Static Gun Model Extension for 3DExperience Delmia, reducing robot arm movements in spot welding by 60% and optimizing lean manufacturing processes.</li>
+                  <li>Developed a C#.NET application for efficient data migration and weld assignment analysis in Delmia V6, improving data accuracy by 25% and reducing processing time by 40%.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">KPIT Technologies Limited</h2>
+          <div class="article-container">
+            <article>
+              <!-- <img src="./Resources/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div>
+                <h3>Software Engineer</h3>
+                <p>Aug 2019 - May 2022</p>
+                <ul>
+                  <li>Optimized automotive lamp joints by 70% using C++ and CAA APIs, reducing joint count by 40% and implementing cost-effective snap solutions, achieving a 20% cost reduction.</li>
+                  <li>Coordinated a team in developing innovative UI/UX solutions and implementing User Defined Features for automotive lamps, significantly reducing joint count by 35% and achieving a CSAT rating of 5.0.</li>
+                  <li>Developed a Drawing automation feature for CATIA v5 using VB.NET, reducing view creation time by 40% by automating repetitive tasks.</li>
+                  <li>Implemented Weight Reduction command with CAA for CATIA v5 part workbench for BIW, balancing weight with material strength, resulting in a 15% weight reduction.</li>
+                  <li>Developed a Clearance & Creepage Tool with CATIA v5 part workbench, enhancing electrical safety in battery packages by predicting and analyzing current flow paths, reducing potential safety incidents by 25%.</li>
+                </ul>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./Resources/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Personal Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Resources/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Local Compass Travel Application</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./Resources/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Pet Adoption Web Application</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./Resources/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="Resources/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:lnu.cha@northeastern.edu">lnu.cha@northeastern.edu</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="Resources/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/channaveer-shivaraj-6a0768160/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Channaveera Shivaraj. All Rights Reserved.</p>
+  </footer>
+  <script src="HamburgerToggle.js"></script>
+</body>
+</html>
